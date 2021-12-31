@@ -22,7 +22,7 @@ function Student(props) {
         axios.delete(`http://127.0.0.1:8000/students/${studentId}`)
             .then(
                 response => {
-                    alert("Student deleted successfully! ");
+                    alert("Estudante removido ");
                     getAllStudents();
                 }
             ).catch((err) => console.log(err));
